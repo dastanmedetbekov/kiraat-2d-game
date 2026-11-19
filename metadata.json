@@ -1,0 +1,6 @@
+{
+  "name": "Столовая Кампуса",
+  "description": "Симулятор обслуживателя студенческой столовой с управлением ресурсами, закупками продуктов и атмосферой университетского кампуса.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

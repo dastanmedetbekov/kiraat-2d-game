@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Rubik', system-ui, sans-serif;
+    --font-sans: 'Manrope', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes campus-pan {
+  0% {
+    transform: scale(1.06) translate3d(0%, 0%, 0);
+  }
+  50% {
+    transform: scale(1.12) translate3d(-1.5%, -1%, 0);
+  }
+  100% {
+    transform: scale(1.06) translate3d(0%, 0%, 0);
+  }
+}
+
+.animate-campus-pan {
+  animation: campus-pan 28s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-campus-pan {
+    animation: none;
+    transform: scale(1.02);
+  }
+}
